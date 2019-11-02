@@ -24,7 +24,7 @@ return [0, 1].
 * `Time Complexity`：`O(n²)`
 * `Space Complexity`：`O(1)`
 ### JavaScript
-![Alt text](./191027_BruteForce.png)
+![](./191027_BruteForce.png)
 
 ## Map(JavaScript)
 

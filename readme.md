@@ -2,5 +2,6 @@
 ## Leetcode
 ### Easy
 * twoSum
+* moveZeroes
 ## other
 * hanoi
