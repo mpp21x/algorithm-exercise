@@ -53,7 +53,4 @@ A and B will have length at most 100.
 * 前半個字串用 `index` 判斷以及起始位置是否等同於A字串長度減掉pre字串長度
 * 後半個字串來比對用 `index` 判斷以及起始位置是否等於 0
 
-
-
-
 ![](191101_previousAndNextIndex.png)

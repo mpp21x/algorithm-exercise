@@ -1,4 +1,0 @@
-###### tags：`Array`、`HashTable`
-# solution
-
-
