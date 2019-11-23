@@ -40,7 +40,7 @@ var numJewelsInStones = function (J, S) {
   }, 0);
 };
 ```
-![](set.png)
+![](/set)
 
 * `Time Complexity`：`O(n²)`
 * `Space Complexity`：`O(2N)` 
