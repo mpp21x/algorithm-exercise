@@ -1,29 +1,22 @@
-# hammingDistance
-The Hamming distance between two integers is the number of positions at which the corresponding bits are different.
+# nimGame
+You are playing the following Nim Game with your friend: There is a heap of stones on the table, each time one of you take turns to remove 1 to 3 stones. The one who removes the last stone will be the winner. You will take the first turn to remove the stones.
+## Example
 
-Given two integers x and y, calculate the Hamming distance.
-
-**Note:**
-0 ≤ `x`, `y` < 2²¹.
-
-
-**Example:**
 ```
-Input: x = 1, y = 4
-
-Output: 2
-
-Explanation:
-1   (0 0 0 1)
-4   (0 1 0 0)
-       ↑   ↑
-
-The above arrows point to positions where the corresponding bits are different.
+Input: 4
+Output: false 
+Explanation: If there are 4 stones in the heap, then you will never win the game;
+             No matter 1, 2, or 3 stones you remove, the last stone will always be 
+             removed by your friend.
 ```
 
 ## 題目
 
-給予兩個數字，將這兩個字轉換成二進位，然後比較其不同的數字有多少。
+撰寫一個函式依據石頭的數量，來判斷這場遊戲中你是否可以贏，而遊戲的規則是
+* 只要最後一個人拿到就可以贏
+* 每次你可以選擇拿 1 ~ 3 顆
+* 你一定得是第一個拿的
+
 
 ## 流程
 * 轉換二進位
