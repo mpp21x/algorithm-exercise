@@ -11,6 +11,7 @@ var groupThePeople = function (groupSizes) {
     for (let i = 0; i < sizesLength; i++) {
         let groupSize = groupSizes[i];
         let tempGroup = [];
+
         if (tempGroups.hasOwnProperty(groupSize)) {
             tempGroup = tempGroups[groupSize];
         }
