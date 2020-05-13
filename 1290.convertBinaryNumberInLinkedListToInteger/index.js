@@ -3,10 +3,8 @@ var FakeNode = /** @class */ (function () {
         this.next = null;
         this.val = val;
     }
-
     return FakeNode;
 }());
-
 function createNodes(nums) {
     var head;
     var lastOneNode;
@@ -25,8 +23,8 @@ function createNodes(nums) {
     });
     return head;
 }
-
-var getDecimalValue = function (node, binaryStr = '') {
+var getDecimalValue = function (node, binaryStr) {
+    if (binaryStr === void 0) { binaryStr = ''; }
     while (node && node.val !== null) {
         // console.log(`node.val :${node.val}`);
         binaryStr += node.val;
@@ -35,6 +33,7 @@ var getDecimalValue = function (node, binaryStr = '') {
     return parseInt(binaryStr, 2);
 };
 var head = createNodes([1, 0, 1]);
+console.log('verify the `head` is truly same as the leetcode input `head`');
 console.info(head.val);
 console.info(head.next.val);
 console.info(head.next.next.val);
