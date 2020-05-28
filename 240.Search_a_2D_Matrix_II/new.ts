@@ -1,20 +1,22 @@
-var searchMatrix = function (matrix, target) {
-    if (!matrix.length)
+var searchMatrix = function (matrix: number[][], target: number) {
+    if (!matrix.length) {
         return false;
-    var firstIndex = 0, secondIndex = matrix[0].length - 1;
+    }
+
+    let firstIndex = 0, secondIndex = (matrix[0].length  -1);
     while (firstIndex < matrix.length && secondIndex >= 0) {
         if (matrix[firstIndex][secondIndex] === target) {
             return true;
-        }
-        if (matrix[firstIndex][secondIndex] < target) {
+        } else if (matrix[firstIndex][secondIndex] > target) {
+            secondIndex--;
+        } else {
             firstIndex++;
         }
-        else {
-            secondIndex--;
-        }
     }
+
     return false;
 };
+
 var matrix = [
     [1, 4, 7, 11, 15],
     [2, 5, 8, 12, 19],
@@ -22,5 +24,7 @@ var matrix = [
     [10, 13, 14, 17, 24],
     [18, 21, 23, 26, 30]
 ];
+
 console.log(searchMatrix(matrix, 5));
-console.log(searchMatrix(matrix, 20));
+// console.log(searchMatrix(matrix, 20));
+
