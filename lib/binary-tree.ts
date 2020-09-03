@@ -8,6 +8,7 @@ export class TreeNode {
     }
 }
 
+
 export class BinarySearchTree {
 
     root: TreeNode;
@@ -34,27 +35,3 @@ export class BinarySearchTree {
         re(this.root, node);
     }
 }
-
-
-const binarySearchTree = new BinarySearchTree();
-[5, 3, 8, 4, 2].forEach((num) => {
-    binarySearchTree.insert(num)
-});
-var postorderTraversal = function (root: TreeNode) {
-    const stack = [root];
-    const answer = [];
-    while (stack.length) {
-        root = stack.pop();
-        answer.unshift(root.val);
-
-        if (root.left) {
-            stack.push(root.left);
-        }
-        if (root.right) {
-            stack.push(root.right);
-        }
-    }
-
-    return answer;
-};
-console.log(postorderTraversal(binarySearchTree.root));

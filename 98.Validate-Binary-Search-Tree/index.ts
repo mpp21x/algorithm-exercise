@@ -1,4 +1,7 @@
 class TreeNode {
+    constructor(val: number) {
+        this.val = val;
+    }
     val: number;
     left: TreeNode;
     right: TreeNode;
