@@ -1,6 +1,6 @@
 "use strict";
 exports.__esModule = true;
-var binary_tree_1 = require("../lib/binary-tree");
+var binary_tree_1 = require("../../lib/binary-tree");
 /**
  * 此題範例的二元樹不符合正常定義的二元樹
  * @param root

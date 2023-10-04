@@ -31,7 +31,7 @@ return [0, 1].
 
 
 ### JavaScript
-![](./191027_BruteForce.png)
+![](191027_BruteForce.png)
 
 ## Map(JavaScript)
 

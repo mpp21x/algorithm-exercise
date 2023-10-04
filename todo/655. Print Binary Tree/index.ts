@@ -1,4 +1,4 @@
-import {TreeNode} from "../lib/binary-tree";
+import {TreeNode} from "../../lib/binary-tree";
 
 /**
  * 此題範例的二元樹不符合正常定義的二元樹
