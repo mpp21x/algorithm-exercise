@@ -7,12 +7,19 @@
     "lib": "lib"
   },
   "scripts": {
+    "format": "prettier --write *.js && prettier --write \"leetcode/**/*.ts\" ",
     "test": "jest"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@jest/globals": "^29.7.0",
+    "@types/jest": "^29.5.5",
+    "@typescript-eslint/eslint-plugin": "^6.7.5",
+    "@typescript-eslint/parser": "^6.7.5",
+    "eslint": "^8.51.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.1",
     "jest": "^29.7.0",
     "ts-jest": "^29.1.1",
     "tsx": "^3.13.0",
